@@ -32,6 +32,9 @@
       .TopBorder {
         border-top: 2px solid green;
       }
+      .leftBorder {
+        border-left: 2px solid gray;
+      }
     </style>
   </head>
   <body>
@@ -198,72 +201,287 @@
       </div>
 
       <!-- parent div  -->
+      <div class="flex justify-center mb-8">
+        <div class="flex w-[1000px] h-[420px] bg-white rounded-xl">
+          <!-- left info -->
+          <div class="bg-white p-3 pt-12 pl-12">
+            <!-- image and seat num -->
+            <div class="flex items-center justify-between">
+              <!-- image and text-->
+              <div class="flex">
+                <div><img src="images/bus-logo.png" alt="" /></div>
+                <div>
+                  <h2 class="ralewayFont text-3xl font-bold ml-2">
+                    Greenline Paribahan
+                  </h2>
+                  <p class="text-[#03071299] text-lg ml-2">
+                    Coach-009-WEB ! AC_Business
+                  </p>
+                </div>
+              </div>
+              <!-- seat num -->
+              <div class="flex ml-40 w-40 h-14 p-4 bg-[#1DD10026] rounded-xl">
+                <img src="images/seat-green.png" alt="" />
+                <h2 class="text-[#1DD100] ml-2"><span>40</span> Seats left</h2>
+              </div>
+            </div>
+
+            <!-- more info  -->
+            <div class="bg-[#F7F8F8] w-[680px] h-56 p-5 rounded-xl mt-5">
+              <div class="flex justify-between pb-4">
+                <h2 class="ralewayFont text-[#03071299]">Route</h2>
+                <h2 class="ralewayFont font-semibold">Dhaka - Sylhet</h2>
+              </div>
+
+              <div class="border-dotted border-2 border-gray-300"></div>
+
+              <div class="flex justify-between pt-4 pb-4">
+                <h2 class="ralewayFont text-[#03071299]">Departure Time</h2>
+                <h2 class="ralewayFont font-semibold">9:00 PM</h2>
+              </div>
+              <div class="border-dotted border-2 border-gray-300"></div>
+
+              <div class="flex gap-3 pt-4 text-sm text-[#030712CC]">
+                <div class="w-56 h-14 bg-[#0307120D] p-4 rounded-xl">
+                  <h2>Boarding Point - Laxmipur</h2>
+                </div>
+                <div class="w-56 h-14 bg-[#0307120D] p-4 rounded-xl">
+                  <h2>Dropping Point - Bogura</h2>
+                </div>
+                <div class="w-56 h-14 bg-[#0307120D] p-4 rounded-xl">
+                  <h2>Est. Time - 11 Hour</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- per ticket price -->
+          <div class="flex">
+            <div><img src="images/info-devider.png" alt="" /></div>
+            <div class="pt-44 pl-8 text-center">
+              <h2 class="font-bold text-3xl ralewayFont">500tk</h2>
+              <p class="ralewayFont text-sm text-[#03071299]">Per Seat</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- seat section -->
       <div class="flex justify-center">
- <div class="flex w-[1000px] bg-white rounded-xl   ">
-        <!-- left info -->
-        <div class="bg-white p-3 pt-12 pl-12">
-          <!-- image and seat num -->
-          <div class="flex items-center justify-between">
-            <!-- image and text-->
-            <div class="flex">
-              <div><img src="images/bus-logo.png" alt="" /></div>
-              <div>
-                <h2 class="ralewayFont text-3xl font-bold ml-2">
-                  Greenline Paribahan
+        <div class="flex">
+          <!-- seat selection -->
+          <div class="w-[650px] rounded-xl bg-white pt-7 pl-7 pr-3">
+            <h2 class="text-2xl font-bold">Select Your Seat</h2>
+            <div class="border-dotted border-2 border-gray-300"></div>
+            <!-- Available -->
+            <div class="flex justify-between mt-3 mb-3">
+              <div class="flex">
+                <img src="images/seat-gray.png" alt="" />
+                <h2 class="text-lg text-[#03071280] font-bold ml-2">
+                  Available
                 </h2>
-                <p class="text-[#03071299] text-lg ml-2">
-                  Coach-009-WEB ! AC_Business
-                </p>
+              </div>
+              <div class="flex">
+                <img src="images/seat-green-filled.png" alt="" />
+                <h2 class="text-lg font-bold text-[#1DD100] ml-2">Selected</h2>
               </div>
             </div>
-            <!-- seat num -->
-            <div class="flex ml-40 w-40 h-14 p-4 bg-[#1DD10026] rounded-xl">
-              <img src="images/seat-green.png" alt="" />
-              <h2 class="text-[#1DD100] ml-2"><span>40</span> Seats left</h2>
+            <div class="border-dotted border-2 border-gray-300 mb-3"></div>
+            <!-- handel -->
+            <div class="flex justify-end">
+              <div class="w-24 h-14 bg-[#0307121A] rounded-xl pl-7 pt-4 mr-9">
+                <img src="images/handel.png" alt="" />
+              </div>
+            </div>
+
+            <!-- seats -->
+            <div class="mb-14">
+              <div class="flex justify-around mt-6">
+                <div><h2>A</h2></div>
+                <div>
+                  <button class="btn w-24">A1</button>
+                  <button class="btn w-24">A2</button>
+                </div>
+                <div>
+                  <button class="btn w-24">A3</button>
+                  <button class="btn w-24">A4</button>
+                </div>
+              </div>
+              <div class="flex justify-around mt-6">
+                <div><h2>B</h2></div>
+                <div>
+                  <button class="btn w-24">B1</button>
+                  <button class="btn w-24">B2</button>
+                </div>
+                <div>
+                  <button class="btn w-24">B3</button>
+                  <button class="btn w-24">B4</button>
+                </div>
+              </div>
+              <div class="flex justify-around mt-6">
+                <div><h2>C</h2></div>
+                <div>
+                  <button class="btn w-24">C1</button>
+                  <button class="btn w-24">C2</button>
+                </div>
+                <div>
+                  <button class="btn w-24">C3</button>
+                  <button class="btn w-24">C4</button>
+                </div>
+              </div>
+              <div class="flex justify-around mt-6">
+                <div><h2>D</h2></div>
+                <div>
+                  <button class="btn w-24">D1</button>
+                  <button class="btn w-24">D2</button>
+                </div>
+                <div>
+                  <button class="btn w-24">D3</button>
+                  <button class="btn w-24">D4</button>
+                </div>
+              </div>
+              <div class="flex justify-around mt-6">
+                <div><h2>E</h2></div>
+                <div>
+                  <button class="btn w-24">E1</button>
+                  <button class="btn w-24">E2</button>
+                </div>
+                <div>
+                  <button class="btn w-24">E3</button>
+                  <button class="btn w-24">E4</button>
+                </div>
+              </div>
+              <div class="flex justify-around mt-6">
+                <div><h2>F</h2></div>
+                <div>
+                  <button class="btn w-24">F1</button>
+                  <button class="btn w-24">F2</button>
+                </div>
+                <div>
+                  <button class="btn w-24">F3</button>
+                  <button class="btn w-24">F4</button>
+                </div>
+              </div>
+              <div class="flex justify-around mt-6">
+                <div><h2>G</h2></div>
+                <div>
+                  <button class="btn w-24">G1</button>
+                  <button class="btn w-24">G2</button>
+                </div>
+                <div>
+                  <button class="btn w-24">G3</button>
+                  <button class="btn w-24">G4</button>
+                </div>
+              </div>
+              <div class="flex justify-around mt-6">
+                <div><h2>H</h2></div>
+                <div>
+                  <button class="btn w-24">H1</button>
+                  <button class="btn w-24">H2</button>
+                </div>
+                <div>
+                  <button class="btn w-24">H3</button>
+                  <button class="btn w-24">H4</button>
+                </div>
+              </div>
+              <div class="flex justify-around mt-6">
+                <div><h2>I</h2></div>
+                <div>
+                  <button class="btn w-24">I1</button>
+                  <button class="btn w-24">I2</button>
+                </div>
+                <div>
+                  <button class="btn w-24">I3</button>
+                  <button class="btn w-24">I4</button>
+                </div>
+              </div>
+              <div class="flex justify-around mt-6">
+                <div><h2>J</h2></div>
+                <div>
+                  <button class="btn w-24">J1</button>
+                  <button class="btn w-24">J2</button>
+                </div>
+                <div>
+                  <button class="btn w-24">J3</button>
+                  <button class="btn w-24">J4</button>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- more info  -->
-          <div class="bg-[#F7F8F8] w-[680px] h-56 p-5 rounded-xl mt-5">
-            <div class="flex justify-between pb-4">
-              <h2 class="ralewayFont text-[#03071299]">Route</h2>
-              <h2 class="ralewayFont font-semibold">Dhaka - Sylhet</h2>
+          <!-- right info -->
+          <div class="w-[450px] rounded-xl bg-white pt-7 pl-7 leftBorder">
+            <h2 class="text-2xl font-bold">Select Your Seat</h2>
+            <div class="border-dotted border-2 border-gray-300 mr-3"></div>
+
+            <!--booked seat  -->
+            <div>
+              <!-- gray part -->
+              <div class="bg-[#F7F8F8] w-[400px] mt-4 rounded-xl">
+                <div class="flex justify-around">
+                  <div>
+                    <h2 class="font-bold text-lg">
+                      Seat
+                      <span
+                        class="bg-[#1DD100] font-semibold rounded-xl text-white"
+                        >2</span
+                      >
+                    </h2>
+                  </div>
+                  <div>
+                    <h2 class="font-bold text-lg">class</h2>
+                  </div>
+
+                  <div>
+                    <h2 class="font-bold text-lg">Price</h2>
+                  </div>
+                </div>
+                <div class="border-2 border-gray-300"></div>
+                <!-- add seat -->
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                    deserunt earum reprehenderit maxime consectetur. Mollitia
+                    dolore, iusto culpa quo ducimus debitis necessitatibus?
+                    Suscipit inventore odit magnam temporibus repudiandae,
+                    doloribus voluptatibus!
+                  </p>
+                </div>
+                <div class="border-2 border-gray-300"></div>
+                <!-- Total bill -->
+                <div class="flex justify-around ">
+                  <div class="font-bold text-lg"><h2>Total Price</h2></div>
+                  <div class="flex font-bold text-lg ml-44">
+                    <h2>BDT</h2>
+                    <span>1100</span>
+                  </div>
+                </div>
+
+                <!-- discount section -->
+                <div class="flex justify-center mt-3">
+                  <input class="w-72 h-14 p-6" type="text" placeholder="Have any copupon?" >
+                  <button class="btn bg-[#1DD100] ml-1 text-white w-24">Apply</button>
+                </div>
+                <!-- discount bill -->
+                <div class="mt-3">
+                  <div class="flex justify-around ">
+                    <div class="font-bold text-lg"><h2>Grand Total</h2></div>
+                    <div class="flex font-bold text-lg ml-44">
+                      <h2>BDT</h2>
+                      <span>1100</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div> 
             </div>
-
-            <div class="border-dotted border-2 border-gray-300"></div>
-
-            <div class="flex justify-between pt-4 pb-4">
-              <h2 class="ralewayFont text-[#03071299]">Departure Time</h2>
-              <h2 class="ralewayFont font-semibold">9:00 PM</h2>
-            </div>
-            <div class="border-dotted border-2 border-gray-300"></div>
-
-            <div class="flex gap-3 pt-4 text-sm text-[#030712CC]">
-              <div class="w-56 h-14 bg-[#0307120D] p-4 rounded-xl">
-                <h2>Boarding Point - Laxmipur</h2>
-              </div>
-              <div class="w-56 h-14 bg-[#0307120D] p-4 rounded-xl">
-                <h2>Dropping Point - Bogura</h2>
-              </div>
-              <div class="w-56 h-14 bg-[#0307120D] p-4 rounded-xl">
-                <h2>Est. Time - 11 Hour</h2>
-              </div>
+            <!-- info of jatri -->
+            <div class="mt-6">
+              <h2>Passenger Name*</h2>
+              <input type="text" placeholder="Enter your name">
             </div>
           </div>
         </div>
-        <!-- per ticket price -->
-        <div class="flex ">
-          <div><img src="images/info-devider.png" alt=""></div>
-          <div class="pt-44 pl-8 text-center">
-            <h2 class="font-bold text-3xl ralewayFont">500tk</h2>
-          <p class="ralewayFont text-sm text-[#03071299]">Per Seat</p>
-        </div>
-          
-
-        </div>
       </div>
-      </div>
-     
     </main>
     <footer></footer>
   </body>
