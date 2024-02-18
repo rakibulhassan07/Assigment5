@@ -7,34 +7,58 @@
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
       rel="stylesheet"
-      type="text/css"/>
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<style>
-  .ralewayFont{
-    font-family: "Raleway", sans-serif;
-}
-.interFont{
-  font-family: "Inter", sans-serif;
-}
-.buttomBorder{
-  border-bottom: 2px solid green;
-}
-</style>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .ralewayFont {
+        font-family: "Raleway", sans-serif;
+      }
+      .interFont {
+        font-family: "Inter", sans-serif;
+      }
+      .ingridDarling {
+        font-family: "Ingrid Darling", cursive;
+      }
+      .bottomBorder {
+        border-bottom: 2px solid green;
+      }
+      .TopBorder {
+        border-top: 2px solid green;
+      }
+    </style>
   </head>
   <body>
     <header class="mx-auto">
-   
       <div class="navbar pl-14 bg-base-100">
-        <div class="navbar-start justify-center ">
+        <div class="navbar-start justify-center">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
             </div>
-            <ul tabindex="0" class="ralewayFont menu menu-sm dropdown-content text-[#030712BF] text-base mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <ul
+              tabindex="0"
+              class="ralewayFont menu menu-sm dropdown-content text-[#030712BF] text-base mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
               <li><a>Home</a></li>
               <li>
                 <a>About</a>
@@ -43,74 +67,98 @@
               <li><a>Search</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost text-4xl font-bold ralewayFont">RH Paribahan</a>
+          <a class="btn btn-ghost text-4xl font-bold ralewayFont"
+            >RH Paribahan</a
+          >
         </div>
         <div class="navbar-center hidden lg:flex">
-          <ul class="ralewayFont menu menu-horizontal px-1 text-base text-[#030712BF]">
+          <ul
+            class="ralewayFont menu menu-horizontal px-1 text-base text-[#030712BF]"
+          >
             <li><a>Home</a></li>
-              <li>
-                <a>About</a>
-              </li>
-              <li><a>Destination</a></li>
-              <li><a>Search</a></li>
+            <li>
+              <a>About</a>
+            </li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
           </ul>
         </div>
         <div class="navbar-end justify-center">
-          <a class="btn bg-[#1DD1001A] text-[#1DD100] border-[#1DD10066] ralewayFont ">Bus<img  src="images/bus-icon.png" alt=""></a>
+          <a
+            class="btn bg-[#1DD1001A] text-[#1DD100] border-[#1DD10066] ralewayFont"
+            >Bus<img src="images/bus-icon.png" alt=""
+          /></a>
         </div>
       </div>
       <div class="flex justify-center">
-        <div class="hero w-[1000px] h-[550px] rounded-xl  " style="background-image: url('images/banner.png'); ">
-        <div class="hero-overlay bg-opacity-60 rounded-xl"></div>
-        <div class="hero-content text-center text-neutral-content">
-          <div class="w-[600px]">
-            <h1 class="mb-5 text-5xl font-bold">End-to-End Travel with<br><span class="text-[#1DD100]">RH Paribahan</span></h1>
-            <p class="mb-5 text-center text-lg">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-            <button class="btn  bg-[#1DD100] border-none">Buy Tickets</button>
+        <div
+          class="hero w-[1000px] h-[550px] rounded-xl"
+          style="background-image: url('images/banner.png')"
+        >
+          <div class="hero-overlay bg-opacity-60 rounded-xl"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="w-[600px]">
+              <h1 class="mb-5 text-5xl font-bold">
+                End-to-End Travel with<br /><span class="text-[#1DD100]"
+                  >RH Paribahan</span
+                >
+              </h1>
+              <p class="mb-5 text-center text-lg">
+                Yes, you can run unit tests and view the results directly within
+                the app. The integrated testing features allow for a streamlined
+                .
+              </p>
+              <button class="btn bg-[#1DD100] border-none">Buy Tickets</button>
+            </div>
           </div>
         </div>
       </div>
-      </div>
       <!-- ?\section -->
-      <div class="flex gap-3 absolute top-[550px] left-44 ">
-         
-         <div class="flex p-8 w-[300px] h-32 bg-white buttomBorder rounded-3xl mb-3 ">
-          <img class="mr-3" src="images/people.png" alt="">
+      <div class="flex gap-3 absolute top-[550px] left-44">
+        <div
+          class="flex p-8 w-[300px] h-32 bg-white bottomBorder rounded-3xl mb-3"
+        >
+          <img class="mr-3" src="images/people.png" alt="" />
           <div>
             <p class="text-4xl font-bold">500K</p>
             <p class="text-lg text-[#03071299]">Registered users</p>
           </div>
-         </div>
+        </div>
 
-         <div class="flex p-8 w-[300px] h-32 bg-white buttomBorder rounded-3xl mb-3 ">
-          <img class="mr-3" src="images/ticket-cupon.png" alt="">
+        <div
+          class="flex p-8 w-[300px] h-32 bg-white bottomBorder rounded-3xl mb-3"
+        >
+          <img class="mr-3" src="images/ticket-cupon.png" alt="" />
           <div>
             <p class="text-4xl font-bold">1.7 lacks</p>
             <p class="text-lg text-[#03071299]">Tickets sold</p>
           </div>
-         </div>
-         
-         <div class="flex p-8 w-[300px] h-32 bg-white rounded-3xl buttomBorder ">
-          <img class="mr-3" src="images/stoppage.png" alt="">
+        </div>
+
+        <div class="flex p-8 w-[300px] h-32 bg-white rounded-3xl bottomBorder">
+          <img class="mr-3" src="images/stoppage.png" alt="" />
           <div>
             <p class="text-4xl font-bold">80K+</p>
             <p class="text-lg text-[#03071299]">Rental partners</p>
           </div>
-         </div>         
+        </div>
       </div>
 
-      <h2 class="flex justify-center mt-16 text-4xl font-bold ">Best offers for you</h2>
+      <h2 class="flex justify-center mt-16 text-4xl font-bold">
+        Best offers for you
+      </h2>
       <div class="flex gap-4 mt-16 justify-center">
-       
         <div class="bg-[#FFBF0F] w-[450px] h-[150px] rounded-3xl flex">
           <div class="pl-10 pt-9">
             <h2 class="text-3xl font-bold interFont">15% OFF</h2>
             <p class="text-lg font-bold interFont">on your next purchase</p>
-            <p class="text-sm text-[#03071280] interFont">use by January 2024</p>
+            <p class="text-sm text-[#03071280] interFont">
+              use by January 2024
+            </p>
           </div>
-          <img src="images/cupon-devider.png" alt="">
+          <img src="images/cupon-devider.png" alt="" />
           <div class="pl-10 pt-9">
-            <span class="ralewayFont text-3xl font-bold ">NEW15</span>
+            <span class="ralewayFont text-3xl font-bold">NEW15</span>
             <p class="text-sm ralewayFont text-[#03071280]">Coupon Code</p>
           </div>
         </div>
@@ -119,28 +167,104 @@
           <div class="pl-10 pt-9">
             <h2 class="text-3xl font-bold interFont">20% OFF</h2>
             <p class="text-lg font-bold interFont">on your next purchase</p>
-            <p class="text-sm text-[#03071280] interFont ">use by January 2024</p>
+            <p class="text-sm text-[#03071280] interFont">
+              use by January 2024
+            </p>
           </div>
-          <img src="images/cupon-devider.png" alt="">
+          <img src="images/cupon-devider.png" alt="" />
           <div class="pl-10 pt-9">
-            <span class="ralewayFont text-3xl font-bold ">Couple 20</span>
+            <span class="ralewayFont text-3xl font-bold">Couple 20</span>
             <p class="text-sm ralewayFont text-[#03071280]">Coupon Code</p>
           </div>
         </div>
       </div>
       <div class="flex justify-center mt-16">
         <div class="w-48 h-16 align-middle">
-        <h2 class="ralewayFont text-[#1DD100] border-lime-600 border-2 rounded-lg p-2 text-center ">See All Offers</h2>
+          <h2
+            class="ralewayFont text-[#1DD100] border-lime-600 border-2 rounded-lg p-2 text-center"
+          >
+            See All Offers
+          </h2>
+        </div>
       </div>
-      
-      </div>
-      
     </header>
-    <main>
+    <main class="TopBorder rounded-xl bg-[#F7F8F8]">
+      <div class="mt-20">
+        <h2 class="text-4xl font-bold text-center mb-6">P.H Paribahan</h2>
+        <p class="text-lg text-[#03071299] ingridDarling text-center mb-16">
+          Yes, you can run unit tests and view the results directly within the
+          app. The integrated testing features allow for a streamlined .
+        </p>
+      </div>
 
+      <!-- parent div  -->
+      <div class="flex justify-center">
+ <div class="flex w-[1000px] bg-white rounded-xl   ">
+        <!-- left info -->
+        <div class="bg-white p-3 pt-12 pl-12">
+          <!-- image and seat num -->
+          <div class="flex items-center justify-between">
+            <!-- image and text-->
+            <div class="flex">
+              <div><img src="images/bus-logo.png" alt="" /></div>
+              <div>
+                <h2 class="ralewayFont text-3xl font-bold ml-2">
+                  Greenline Paribahan
+                </h2>
+                <p class="text-[#03071299] text-lg ml-2">
+                  Coach-009-WEB ! AC_Business
+                </p>
+              </div>
+            </div>
+            <!-- seat num -->
+            <div class="flex ml-40 w-40 h-14 p-4 bg-[#1DD10026] rounded-xl">
+              <img src="images/seat-green.png" alt="" />
+              <h2 class="text-[#1DD100] ml-2"><span>40</span> Seats left</h2>
+            </div>
+          </div>
+
+          <!-- more info  -->
+          <div class="bg-[#F7F8F8] w-[680px] h-56 p-5 rounded-xl mt-5">
+            <div class="flex justify-between pb-4">
+              <h2 class="ralewayFont text-[#03071299]">Route</h2>
+              <h2 class="ralewayFont font-semibold">Dhaka - Sylhet</h2>
+            </div>
+
+            <div class="border-dotted border-2 border-gray-300"></div>
+
+            <div class="flex justify-between pt-4 pb-4">
+              <h2 class="ralewayFont text-[#03071299]">Departure Time</h2>
+              <h2 class="ralewayFont font-semibold">9:00 PM</h2>
+            </div>
+            <div class="border-dotted border-2 border-gray-300"></div>
+
+            <div class="flex gap-3 pt-4 text-sm text-[#030712CC]">
+              <div class="w-56 h-14 bg-[#0307120D] p-4 rounded-xl">
+                <h2>Boarding Point - Laxmipur</h2>
+              </div>
+              <div class="w-56 h-14 bg-[#0307120D] p-4 rounded-xl">
+                <h2>Dropping Point - Bogura</h2>
+              </div>
+              <div class="w-56 h-14 bg-[#0307120D] p-4 rounded-xl">
+                <h2>Est. Time - 11 Hour</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- per ticket price -->
+        <div class="flex ">
+          <div><img src="images/info-devider.png" alt=""></div>
+          <div class="pt-44 pl-8 text-center">
+            <h2 class="font-bold text-3xl ralewayFont">500tk</h2>
+          <p class="ralewayFont text-sm text-[#03071299]">Per Seat</p>
+        </div>
+          
+
+        </div>
+      </div>
+      </div>
+     
     </main>
-    <footer>
-        
-    </footer>
+    <footer></footer>
   </body>
 </html>
