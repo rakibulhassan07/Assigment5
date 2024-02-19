@@ -10,12 +10,9 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
       .ralewayFont {
         font-family: "Raleway", sans-serif;
@@ -23,9 +20,7 @@
       .interFont {
         font-family: "Inter", sans-serif;
       }
-      .ingridDarling {
-        font-family: "Ingrid Darling", cursive;
-      }
+     
       .bottomBorder {
         border-bottom: 2px solid green;
       }
@@ -112,9 +107,7 @@
                   within the app. The integrated testing features allow for a
                   streamlined .
                 </p>
-                <button class="btn bg-[#1DD100] border-none">
-                  Buy Tickets
-                </button>
+                 <a href="#mainSection" class="btn bg-[#1DD100] border-none">Buy Tickets</a> 
               </div>
             </div>
           </div>
@@ -126,6 +119,7 @@
           >
             <img class="mr-3" src="images/people.png" alt="" />
             <div>
+              
               <p class="text-4xl font-bold">500K</p>
               <p class="text-lg text-[#03071299]">Registered users</p>
             </div>
@@ -152,7 +146,7 @@
           </div>
         </div>
 
-        <h2 class="flex justify-center mt-16 text-4xl font-bold">
+        <h2 class="flex justify-center mt-28 text-4xl font-bold">
           Best offers for you
         </h2>
         <div class="flex gap-4 mt-16 justify-center">
@@ -196,7 +190,7 @@
           </div>
         </div>
       </header>
-      <main class="TopBorder rounded-xl bg-[#F7F8F8] mb-6">
+      <main id="mainSection" class="TopBorder rounded-xl bg-[#F7F8F8] mb-6">
         <div class="mt-20">
           <h2 class="text-4xl font-bold text-center mb-6">P.H Paribahan</h2>
           <p class="text-lg text-[#03071299] ingridDarling text-center mb-16">
@@ -265,8 +259,9 @@
             <div class="flex">
               <div><img src="images/info-devider.png" alt="" /></div>
               <div class="pt-44 pl-8 text-center">
-                <h2 class="font-bold text-3xl ralewayFont">500tk</h2>
-                <p class="ralewayFont text-sm text-[#03071299]">Per Seat</p>
+                <img class="p-3" src="images/fare.png" alt="">
+                <h2 id="ticketPrice" class="font-bold text-3xl ralewayFont"><span>500</span>tk</h2>
+                <p class="ralewayFont text-sm text-[#03071299] font-bold">Per Seat</p>
               </div>
             </div>
           </div>
@@ -307,111 +302,111 @@
                 <div class="flex justify-around mt-6">
                   <div><h2>A</h2></div>
                   <div>
-                    <button class="btn w-24">A1</button>
-                    <button class="btn w-24">A2</button>
+                    <button id="A1" class="seat btn w-24">A1</button>
+                    <button id="A2" class=" seat btn w-24">A2</button>
                   </div>
                   <div>
-                    <button class="btn w-24">A3</button>
-                    <button class="btn w-24">A4</button>
+                    <button id="A3"  class="seat btn w-24">A3</button>
+                    <button id="A4" class="seat btn w-24">A4</button>
                   </div>
                 </div>
                 <div class="flex justify-around mt-6">
                   <div><h2>B</h2></div>
                   <div>
-                    <button class="btn w-24">B1</button>
-                    <button class="btn w-24">B2</button>
+                    <button id="B1" class="seat btn w-24">B1</button>
+                    <button id="B2" class="seat btn w-24">B2</button>
                   </div>
                   <div>
-                    <button class="btn w-24">B3</button>
-                    <button class="btn w-24">B4</button>
+                     <button id="B3" class="seat btn w-24">B3</button>
+                     <button id="B4" class="seat btn w-24">B4</button>
                   </div>
                 </div>
                 <div class="flex justify-around mt-6">
                   <div><h2>C</h2></div>
                   <div>
-                    <button class="btn w-24">C1</button>
-                    <button class="btn w-24">C2</button>
+                     <button id="C1" class="seat btn w-24">C1</button>
+                     <button id="C2" class="seat btn w-24">C2</button>
                   </div>
                   <div>
-                    <button class="btn w-24">C3</button>
-                    <button class="btn w-24">C4</button>
+                     <button id="C3" class="seat btn w-24">C3</button>
+                     <button id="C4" class="seat btn w-24">C4</button>
                   </div>
                 </div>
                 <div class="flex justify-around mt-6">
                   <div><h2>D</h2></div>
                   <div>
-                    <button class="btn w-24">D1</button>
-                    <button class="btn w-24">D2</button>
+                     <button  id="D1"class="seat btn w-24">D1</button>
+                     <button  id="D2"class="seat btn w-24">D2</button>
                   </div>
                   <div>
-                    <button class="btn w-24">D3</button>
-                    <button class="btn w-24">D4</button>
+                     <button id="D3" class="seat btn w-24">D3</button>
+                     <button id="D4" class="seat btn w-24">D4</button>
                   </div>
                 </div>
                 <div class="flex justify-around mt-6">
                   <div><h2>E</h2></div>
                   <div>
-                    <button class="btn w-24">E1</button>
-                    <button class="btn w-24">E2</button>
+                     <button id="E1" class="seat btn w-24">E1</button>
+                     <button id="E2" class="seat btn w-24">E2</button>
                   </div>
                   <div>
-                    <button class="btn w-24">E3</button>
-                    <button class="btn w-24">E4</button>
+                     <button id="E3"  class="seat btn w-24">E3</button>
+                     <button id="E4" class="seat btn w-24">E4</button>
                   </div>
                 </div>
                 <div class="flex justify-around mt-6">
                   <div><h2>F</h2></div>
                   <div>
-                    <button class="btn w-24">F1</button>
-                    <button class="btn w-24">F2</button>
+                    <button id="F1" class="btn seat w-24">F1</button>
+                    <button id="F2" class="btn seat w-24">F2</button>
                   </div>
                   <div>
-                    <button class="btn w-24">F3</button>
-                    <button class="btn w-24">F4</button>
+                    <button id="F3" class="btn seat w-24">F3</button>
+                    <button id="F4" class="btn seat w-24">F4</button>
                   </div>
                 </div>
                 <div class="flex justify-around mt-6">
                   <div><h2>G</h2></div>
                   <div>
-                    <button class="btn w-24">G1</button>
-                    <button class="btn w-24">G2</button>
+                    <button id="G1" class="btn seat w-24">G1</button>
+                    <button id="G2" class="btn seat w-24">G2</button>
                   </div>
                   <div>
-                    <button class="btn w-24">G3</button>
-                    <button class="btn w-24">G4</button>
+                    <button id="G3" class="btn seat w-24">G3</button>
+                    <button id="G4" class="btn seat w-24">G4</button>
                   </div>
                 </div>
                 <div class="flex justify-around mt-6">
                   <div><h2>H</h2></div>
                   <div>
-                    <button class="btn w-24">H1</button>
-                    <button class="btn w-24">H2</button>
+                    <button id="H1" class="btn seat w-24">H1</button>
+                    <button id="H2" class="btn seat w-24">H2</button>
                   </div>
                   <div>
-                    <button class="btn w-24">H3</button>
-                    <button class="btn w-24">H4</button>
+                    <button id="H3" class="btn seat w-24">H3</button>
+                    <button id="H4" class="btn seat w-24">H4</button>
                   </div>
                 </div>
                 <div class="flex justify-around mt-6">
                   <div><h2>I</h2></div>
                   <div>
-                    <button class="btn w-24">I1</button>
-                    <button class="btn w-24">I2</button>
+                    <button id="I1" class="btn seat w-24">I1</button>
+                    <button id="I2" class="btn seat w-24">I2</button>
                   </div>
                   <div>
-                    <button class="btn w-24">I3</button>
-                    <button class="btn w-24">I4</button>
+                    <button id="I3" class="btn seat w-24">I3</button>
+                    <button id="I4" class="btn seat w-24">I4</button>
                   </div>
                 </div>
                 <div class="flex justify-around mt-6">
                   <div><h2>J</h2></div>
                   <div>
-                    <button class="btn w-24">J1</button>
-                    <button class="btn w-24">J2</button>
+                    <button id="J1" class="btn seat w-24">J1</button>
+                    <button id="J2" class="btn seat w-24">J2</button>
                   </div>
                   <div>
-                    <button class="btn w-24">J3</button>
-                    <button class="btn w-24">J4</button>
+                    <button id="J3" class="btn seat w-24">J3</button>
+                    <button id="J4" class="btn seat w-24">J4</button>
                   </div>
                 </div>
               </div>
@@ -446,14 +441,8 @@
                   </div>
                   <div class="border-2 border-gray-300"></div>
                   <!-- add seat -->
-                  <div>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Eos deserunt earum reprehenderit maxime consectetur.
-                      Mollitia dolore, iusto culpa quo ducimus debitis
-                      necessitatibus? Suscipit inventore odit magnam temporibus
-                      repudiandae, doloribus voluptatibus!
-                    </p>
+                  <div id="seatContainer" class="text-lg text-[#03071280] font-bold mr-6 pl-14">
+                   
                   </div>
                   <div class="border-2 border-gray-300"></div>
                   <!-- Total bill -->
@@ -586,5 +575,7 @@
         </button>
       </div>
     </section>
+    <script src="function.js"></script>
+    <script src="utility.js"></script>
   </body>
 </html>
