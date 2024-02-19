@@ -5,12 +5,14 @@ let totalPrice=0;
 const seats=document.querySelectorAll(".seat")
 for (let index = 0; index < seats.length; index++) {
     const seat = seats[index];
-  
+   
     seat.addEventListener("click",function(){
      if(titleCount<="4")
      {
+    
        const seatId = seat.id
      const seatsText=seat.innerHTML;
+    
     //  console.log(seatsText)
      const ticket=document.getElementById('ticketPrice')
      const ticketText=ticket.innerText
@@ -27,9 +29,12 @@ for (let index = 0; index < seats.length; index++) {
     document.getElementById('price').innerText=totalPrice
 
     document.getElementById('seatCount').innerText=titleCount-1;
-    document.getElementById('discreaseSeat').innerText=40-(titleCount-1)
+    document.getElementById('decreaseSeat').innerText=40-(titleCount-1)
 
-     }  
+     }
+
+     
+
      
 
     
@@ -67,11 +72,36 @@ btn.addEventListener("click", function(){
         const element=document.getElementById('inputHide');
          element.classList.add('hidden');
      }
-   
+    
    }
    else{
     alert("Please At Least buy 4 ticket ")
    }
+  
+
+})
+
+
+
+const nextBtn=document.getElementById('next');
+nextBtn.addEventListener("click", function(){
+    const phone=document.getElementById('phoneNumber')
+  const  phoneNum=phone.value;
+  //console.log(phoneNum)
+   const phoneNumber=parseInt(phoneNum);
+   
+  // console.log(typeof phoneNumber)
+    
+     if((typeof phoneNumber=='number')   )
+     { 
+        const nextB=document.getElementById('next');
+        nextB.classList.remove('hidden');
+         const element2=document.getElementById('homePage');
+          element2.classList.add('hidden');
+
+        const element1=document.getElementById('Confirm');
+         element1.classList.remove('hidden');
+     }
    
 
 })

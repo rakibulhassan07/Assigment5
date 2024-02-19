@@ -36,7 +36,7 @@
     </style>
   </head>
   <body>
-    <section class="homePage">
+    <section id="homePage" >
       <header class="mx-auto">
         <div class="navbar pl-14 bg-base-100">
           <div class="navbar-start justify-center">
@@ -226,7 +226,7 @@
                 <div class="flex ml-40 w-40 h-14 p-4 bg-[#1DD10026] rounded-xl">
                   <img src="images/seat-green.png" alt="" />
                   <h2 class="text-[#1DD100] ml-2">
-                    <span id="discreaseSeat">40</span> Seats left
+                    <span id="decreaseSeat">40</span> Seats left
                   </h2>
                 </div>
               </div>
@@ -506,11 +506,7 @@
               </div>
               <div class="mt-6 text-lg font-semibold">
                 <h2 class="mb-3">Phone Number*</h2>
-                <input
-                  class="w-96 h-14 p-6 border-2 rounded-xl"
-                  type="text"
-                  placeholder="Enter your phone number"
-                />
+                <input id="phoneNumber" class="w-96 h-14 p-6 border-2 rounded-xl" type="text"placeholder="Enter your phone number"/>
               </div>
               <div class="mt-6 text-lg font-semibold">
                 <h2 class="mb-3">Email ID</h2>
@@ -520,7 +516,7 @@
                   placeholder="Enter your email id"
                 />
               </div>
-              <button class="btn w-80 ml-8 mt-6 bg-[#1DD100] text-white">
+              <button id="next" class=" btn w-80 ml-8 mt-6 bg-[#1DD100] text-white">
                 Next
               </button>
               <div class="flex justify-around mt-6 text-[#03071299]">
@@ -574,7 +570,7 @@
     </section>
 
     <!-- confirm part-->
-    <section class="flex min-h-screen justify-center bg-slate-200 hidden">
+    <section id="Confirm" class="flex min-h-screen justify-center bg-slate-200 hidden">
       <div
         class="w-[600px] h-[381px] bg-white text-center pt-7 space-y-4 mt-24"
       >
