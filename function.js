@@ -20,12 +20,21 @@ for (let index = 0; index < seats.length; index++) {
     //  console.log(ticketValue)
      setBackground(seatId)
 
+   
+
      const seatCon=document.getElementById('seatContainer')
-     const p=document.createElement('p')
-     p.innerText=titleCount+". "+seatsText; 
-     seatCon.appendChild(p);
+     const div=document.createElement('div')
+     div.innerText=titleCount+". "+seatsText +"----------"+"Economy"+"---------"+ticketText;   
+     seatCon.appendChild(div);
+     
+    //  const seatP=document.getElementById('seatContainer')
+    //  const div1=document.createElement('div')
+    //  div1.innerText=ticketText; 
+    //  seatP.appendChild(div1);
      titleCount++;
-      totalPrice+=ticketValue;
+
+
+    totalPrice+=ticketValue;
     document.getElementById('price').innerText=totalPrice
 
     document.getElementById('seatCount').innerText=titleCount-1;
@@ -87,12 +96,9 @@ const nextBtn=document.getElementById('next');
 nextBtn.addEventListener("click", function(){
     const phone=document.getElementById('phoneNumber')
   const  phoneNum=phone.value;
-  //console.log(phoneNum)
    const phoneNumber=parseInt(phoneNum);
-   
-  // console.log(typeof phoneNumber)
     
-     if((typeof phoneNumber=='number')   )
+     if((typeof phoneNumber=='number' && (titleCount-1)>=1)   )
      { 
         const nextB=document.getElementById('next');
         nextB.classList.remove('hidden');
@@ -101,6 +107,9 @@ nextBtn.addEventListener("click", function(){
 
         const element1=document.getElementById('Confirm');
          element1.classList.remove('hidden');
+     }
+     else{
+        alert("FillUp at least one seat ")
      }
    
 
